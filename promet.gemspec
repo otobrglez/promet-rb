@@ -18,7 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  %w{oj httparty georuby geocoder rgeo}.each do |g|
+  # oj
+  %w{httparty georuby geocoder rgeo}.each do |g|
     spec.add_dependency g
   end
 
